@@ -1,4 +1,13 @@
-# Kaldi for dummies
+# Completed version of Kaldi for dummies
+Unlike other repos, this one contains all files calculated by kaldi. This is useful for testing and quick overview.
+
+If you want to re-run `run.sh`, replace paths in all wav.scp . The easiest way to do so is to use:
+```bash
+grep -rl "/home/hqa/asr/kaldi/egs/kaldi-for-dummies" . --exclude-dir=.git | xargs sed -i 's/<abs path to kaldi-for-dummies>/\/here\/is\/your\/abs\/path/g'
+```
+
+---
+## Additional info from the [original repo](https://github.com/SethiPawandeep/kaldi-for-dummies)
 
 The digits recordings data has been taken from [here](https://github.com/Jakobovski/free-spoken-digit-dataset/tree/master/recordings).
 
